@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <HelloWorld msg="La mia prima app con vue CLI"/>
+    <Titolo msg="La prima app con vue CLI"/>
+    <Hero />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/TheFirstApp.vue'
+import Hero from './components/Hero.vue';
+import Titolo from './components/Title.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Titolo,
+    Hero
   }
 }
 </script>
